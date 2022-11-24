@@ -7,3 +7,6 @@ The company "Travel Agency" is an imaginary company and does not represent any a
 Creating a website was really challenging for me, especially in terms of designing and making it responsive to different screen resolutions and widths. All seminar materials and online sources helped me develop my website professionally. One of the most difficult times for me was when I needed to create a responsive and simple header and footer. Moreover, it took a long time to create a variety of pages since each contained a different design and contents.
 
 In general, developing my first website was a really amazing journey, and it was challenging as well since it included working with different programming languages. Last but not least, in the future, I will do my best to create even better websites.
+
+Hosting: https://00012928.netlify.app/
+Github: https://github.com/00012928/WT_CW1_00012928
