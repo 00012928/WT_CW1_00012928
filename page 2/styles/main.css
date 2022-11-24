@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(black, gray, lightgray);
+}
+
+main {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/mainbg.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.top-part {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 50px;
+}
+
+.description {
+	width: 50%;
+}
+
+.main-video iframe {
+	width: 600px;
+}
+
+main hr {
+	width: 80%;
+	border: none;
+	height: 2px;
+	background: white;
+	margin-top: 50px;
+}
+
+.statistics {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 400px;
+	padding-bottom: 50px;
+}
+
+.statistics>p {
+	color: white;
+	font-style: italic;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 20px 0;
+	font-size: 30px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-statistics {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(44, 44, 44, 0.616);
+	border-radius: 40px;
+	width: 90%;
+	height: 95%;
+	box-shadow: 0px 0px 25px 1px rgba(255, 255, 255, 0.674);
+}
+
+.main-statistics section {
+	margin: 0 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	width: 100%;
+	height: 100px;
+	text-transform: uppercase;
+}
+
+.row {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+	height: 50%;
+}
+
+.main-statistics section img {
+	width: 35px;
+}
+
+.main-statistics section h1 {
+	font-size: 40px;
+	color: cyan;
+}
+
+.user-comments {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	width: 100%;
+	height: 950px;
+	background-image: url('../images/lightbackground.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	padding: 50px;
+}
+
+.company-overall img {
+	width: 300px;
+	margin: 40px 0;
+	transition: all 0.3s ease-in-out ;
+}
+
+.company-overall img:hover {
+	transform: translate(50px,0);
+}
+
+.comments-area {
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(128, 128, 128, 0.6));
+	border-radius: 40px;
+	padding: 20px 20px 20px 0;
+}
+
+.comment {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px;
+	margin: 15px 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.comment:hover {
+	transform: scale(1.06);
+}
+
+.comments-area>h2 a{
+	margin: 20px 70px;
+	color: white;
+}
+
+.comment-main-part {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(127, 127, 127, 0.538);
+	border-radius: 40px;
+	width: 400px;
+	height: 120px;
+	padding: 10px;
+}
+
+.comment-main-part img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.comment-text {
+	padding-left: 10px;
+}
+
+.comment-rating img {
+	width: 300px;
+}
+
+@media (max-width: 850px) {
+
+	.top-part {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+
+	.main-video {
+		width: 80%;
+	}
+
+	.main-video iframe {
+		width: 100%;
+		height: 100%;
+	}
+
+	.description {
+		width: 70%;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.statistics>p {
+		font-size: 100%;
+	}
+
+	.statistics {
+		width: 100%;
+	}
+
+	.main-statistics {
+		height: 70%;
+	}
+
+	.row {
+		height: 30%;
+	}
+
+	.row section {
+		padding: 0;
+		margin: 0;
+	}
+
+	.row section img {
+		width: 20%;
+	}
+
+	.row section h1 {
+		font-size: 100%;
+	}
+
+	.row section h4 {
+		font-size: 100%;
+	}
+
+	.row {
+		width: 100%;
+		height: 50%;
+	}
+
+	.user-comments{
+		width: 100%;
+		padding: 0;
+		height: auto;
+	}
+
+	.company-overall h1 {
+		font-size: 100%;
+	}
+
+	.company-overall img {
+		width: 30%;
+	}
+
+	.user-comments>h2 {
+		font-size: 100%;
+	}
+
+	.comments-area {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		height: auto;
+	}
+
+	.comments-area h2 {
+		font-size: 100%;
+	}
+
+	.comment {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.comment-main-part img {
+		width: 50%;
+	}
+
+	.comment-text h3 {
+		font-size: 100%;
+	}
+
+	.comment-text h5 {
+		font-size: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+
+	.top-part {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+
+	.main-video {
+		width: 80%;
+	}
+
+	.main-video iframe {
+		width: 100%;
+		height: 100%;
+	}
+
+	.description {
+		width: 70%;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.statistics>p {
+		font-size: 100%;
+	}
+
+	.main-statistics {
+		height: 70%;
+	}
+
+	.row {
+		height: 30%;
+	}
+
+	.row section img {
+		width: 20%;
+	}
+
+	.row section h1 {
+		font-size: 100%;
+	}
+
+	.row section h4 {
+		font-size: 100%;
+	}
+
+	.row {
+		width: 100%;
+		height: 50%;
+	}
+
+	.user-comments{
+		width: 100%;
+		padding: 0;
+		height: auto;
+	}
+
+	.company-overall h1 {
+		font-size: 100%;
+	}
+
+	.company-overall img {
+		width: 30%;
+	}
+
+	.user-comments>h2 {
+		font-size: 100%;
+	}
+
+	.comments-area {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		height: auto;
+	}
+
+	.comments-area h2 {
+		font-size: 100%;
+	}
+
+	.comment {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		transform: scale(80%);
+	}
+
+	.comment-main-part img {
+		width: 50%;
+	}
+
+	.comment-text h3 {
+		font-size: 100%;
+	}
+
+	.comment-text h5 {
+		font-size: 100%;
+	}
+}
